@@ -1,3 +1,5 @@
+# IF YOU ARE HERE FROM THE TUTORIAL IT IS NOW OUTDATED. PLEASE READ THE INSTRUCTIONS WRITTEN BELOW. IF YOU ARE STUCK PLEASE JOIN THE SUPPORT DISCORD. THANK YOU!
+
 <h1 align="center">🔥 Auto Royale 🔥</h1>
 <h3 align="center">Automatically farm mastery rewards in clash royale.</h3> 
 
