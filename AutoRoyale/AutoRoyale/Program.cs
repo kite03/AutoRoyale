@@ -51,7 +51,8 @@ Public Version | Created by kite1101";
             challengeButton.x = Convert.ToInt32(cfgFile.ReadLine());
             challengeButton.y = Convert.ToInt32(cfgFile.ReadLine());
             challengeButton.setCol(Convert.ToInt32(cfgFile.ReadLine()));
-            Console.WriteLine($"Challenge Button: {challengeButton.x}, {challengeButton.y} Col: {challengeButton.getCol()}");
+            Console.WriteLine(
+                $"Challenge Button: {challengeButton.x}, {challengeButton.y} Col: {challengeButton.getCol()}");
 
             Point restartButton = new Point();
             restartButton.x = Convert.ToInt32(cfgFile.ReadLine());
@@ -63,7 +64,8 @@ Public Version | Created by kite1101";
             noMoreRewards.x = Convert.ToInt32(cfgFile.ReadLine());
             noMoreRewards.y = Convert.ToInt32(cfgFile.ReadLine());
             noMoreRewards.setCol(Convert.ToInt32(cfgFile.ReadLine()));
-            Console.WriteLine($"No More Rewards Alert: {noMoreRewards.x}, {noMoreRewards.y} Col: {restartButton.getCol()}");
+            Console.WriteLine(
+                $"No More Rewards Alert: {noMoreRewards.x}, {noMoreRewards.y} Col: {restartButton.getCol()}");
 
             Console.WriteLine("------- Buttons where color is not required -------");
 
@@ -115,7 +117,8 @@ Public Version | Created by kite1101";
                         bool waiting = true;
                         while (waiting)
                         {
-                            if (challengeButton.getCol() == windowsTools.GetPixelColor(challengeButton.x, challengeButton.y))
+                            if (challengeButton.getCol() ==
+                                windowsTools.GetPixelColor(challengeButton.x, challengeButton.y))
                             {
                                 log("Clicking challenge button");
                                 SendClick(challengeButton);
@@ -127,43 +130,52 @@ Public Version | Created by kite1101";
                 }
                 else
                 {
-                    // note to self: bot can click on cancel button and break
-                    if (restartButton.getCol() == windowsTools.GetPixelColor(restartButton.x, restartButton.y))
+                    // check if shit is broken
+                    if (partyButton.getCol() == windowsTools.GetPixelColor(partyButton.x, partyButton.y))
                     {
-                        log("Game has ended");
-                        SendClick(restartButton);
                         inGame = false;
                     }
                     else
                     {
-                        System.Threading.Thread.Sleep(2000);
-
-                        Point chosenTroop = new Point();
-                        int rand = r.Next(1, 5);
-
-                        switch (rand)
+                        // note to self: bot can click on cancel button and break
+                        if (restartButton.getCol() == windowsTools.GetPixelColor(restartButton.x, restartButton.y))
                         {
-                            case 1:
-                                chosenTroop.x = troop1.x;
-                                chosenTroop.y = troopY;
-                                break;
-                            case 2:
-                                chosenTroop.x = troop2.x;
-                                chosenTroop.y = troopY;
-                                break;
-                            case 3:
-                                chosenTroop.x = troop3.x;
-                                chosenTroop.y = troopY;
-                                break;
-                            case 4:
-                                chosenTroop.x = troop4.x;
-                                chosenTroop.y = troopY;
-                                break;
+                            log("Game has ended");
+                            SendClick(restartButton);
+                            inGame = false;
                         }
-                        SendClick(chosenTroop);
-                        log($"Playing Troop {rand}");
-                        SendClick(switcher ? point1 : point2);
-                        switcher = !switcher;
+                        else
+                        {
+                            System.Threading.Thread.Sleep(2000);
+
+                            Point chosenTroop = new Point();
+                            int rand = r.Next(1, 5);
+
+                            switch (rand)
+                            {
+                                case 1:
+                                    chosenTroop.x = troop1.x;
+                                    chosenTroop.y = troopY;
+                                    break;
+                                case 2:
+                                    chosenTroop.x = troop2.x;
+                                    chosenTroop.y = troopY;
+                                    break;
+                                case 3:
+                                    chosenTroop.x = troop3.x;
+                                    chosenTroop.y = troopY;
+                                    break;
+                                case 4:
+                                    chosenTroop.x = troop4.x;
+                                    chosenTroop.y = troopY;
+                                    break;
+                            }
+
+                            SendClick(chosenTroop);
+                            log($"Playing Troop {rand}");
+                            SendClick(switcher ? point1 : point2);
+                            switcher = !switcher;
+                        }
                     }
                 }
             }
@@ -172,6 +184,7 @@ Public Version | Created by kite1101";
 
         private const UInt32 MOUSEEVENTF_LEFTDOWN = 0x0002;
         private const UInt32 MOUSEEVENTF_LEFTUP = 0x0004;
+
         [DllImport("user32.dll")]
         private static extern void mouse_event(
             UInt32 dwFlags, // motion and click options
@@ -199,7 +212,6 @@ Public Version | Created by kite1101";
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine(message);
         }
-
     }
 
     class Point
@@ -236,11 +248,10 @@ Public Version | Created by kite1101";
             IntPtr hdc = GetDC(IntPtr.Zero);
             uint pixel = GetPixel(hdc, x, y);
             ReleaseDC(IntPtr.Zero, hdc);
-            Color color = Color.FromArgb((int)(pixel & 0x000000FF),
-                (int)(pixel & 0x0000FF00) >> 8,
-                (int)(pixel & 0x00FF0000) >> 16);
+            Color color = Color.FromArgb((int) (pixel & 0x000000FF),
+                (int) (pixel & 0x0000FF00) >> 8,
+                (int) (pixel & 0x00FF0000) >> 16);
             return color.ToArgb();
         }
     }
 }
-
