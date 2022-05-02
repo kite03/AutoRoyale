@@ -1,0 +1,21 @@
+Party Button X
+Party Button Y
+Party Button Color
+Challenge Button X
+Challenge Button Y
+Challenge Button Color
+Restart Button X
+Restart Button Y
+Restart Button Color
+No More Rewards X (set to 0 if you don't care)
+No More Rewards Y (set to 0 if you don't care)
+No More Rewards Color (set to 0 if you don't care)
+Placement Point 1 X
+Placement Point 1 Y
+Placement Point 2 X
+Placement Point 2 Y
+Troop 1 X
+Troop 2 X
+Troop 3 X
+Troop 4 X
+Troops Y
