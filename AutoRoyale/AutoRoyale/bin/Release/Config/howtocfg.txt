@@ -1,3 +1,6 @@
+Each line corresponds to a line in cfg.txt
+Positions + Colors can be found using the Colorfinder also present in this repo
+------------------------------
 Party Button X
 Party Button Y
 Party Button Color
