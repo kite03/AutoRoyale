@@ -4,9 +4,7 @@
 ![image](https://user-images.githubusercontent.com/67329371/166226597-b2dfaaea-f59e-42b5-a562-28f4419ed152.png)
 
 ### Note
-This project is open source. All contributions are welcome and appreciated.
-
-If you're stuck or have any suggestions, feel free to join the [support discord](https://discord.gg/AYjvBSNrrn).
+This project is open source. All contributions are welcome and appreciated. If you're stuck or have any suggestions, feel free to join the [support discord](https://discord.gg/AYjvBSNrrn).
 
 ### How to use (Video guide coming soon)
 1.) Install [Bluestacks](https://www.bluestacks.com/) (or any other android emulator)
