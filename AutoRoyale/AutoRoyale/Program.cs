@@ -125,6 +125,15 @@ Public Version | Created by kite1101";
                                 waiting = false;
                                 inGame = true;
                             }
+                            else
+                            {
+                                if (noMoreRewards.getCol() ==
+                                    windowsTools.GetPixelColor(noMoreRewards.x, noMoreRewards.y))
+                                {
+                                    log("Clicking no more rewards button");
+                                    SendClick(challengeButton);
+                                }
+                            }
                         }
                     }
                 }
