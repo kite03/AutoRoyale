@@ -124,15 +124,15 @@ Public Version | Created by kite1101";
                                 SendClick(challengeButton);
                                 waiting = false;
                                 inGame = true;
-                            }
-                            else
-                            {
+
+                                System.Threading.Thread.Sleep(1000);
                                 if (noMoreRewards.getCol() ==
                                     windowsTools.GetPixelColor(noMoreRewards.x, noMoreRewards.y))
                                 {
                                     log("Clicking no more rewards button");
                                     SendClick(challengeButton);
                                 }
+
                             }
                         }
                     }
