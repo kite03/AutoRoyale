@@ -130,7 +130,7 @@ Public Version | Created by kite1101";
                                     windowsTools.GetPixelColor(noMoreRewards.x, noMoreRewards.y))
                                 {
                                     log("Clicking no more rewards button");
-                                    SendClick(challengeButton);
+                                    SendClick(noMoreRewards);
                                 }
 
                             }
