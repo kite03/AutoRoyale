@@ -3,6 +3,8 @@
 
 [Click Here to join out Discord Server!](https://discord.com/invite/AYjvBSNrrn/)
 
+(We share configs here too)
+
 ## ⚙ Setup
 1.) First download the latest version from https://github.com/kite03/AutoRoyale/releases
 
