@@ -3,7 +3,10 @@
 <h3 align="center">Join out Discord Server! https://discord.com/invite/AYjvBSNrrn/ (We share configs here)</h3> 
 
 ## ⚙ Setup
-1.) First download the latest version from https://github.com/kite03/AutoRoyale/releases
+
+NOTE: For windows 11 you'll have to recompile the bot.
+
+1.) First download the latest version from https://github.com/kite03/AutoRoyale/releases also install an [android emulator](https://bluestacks.com/) and get clash royale on it.
 
 2.) Run colorfinder.exe
 
