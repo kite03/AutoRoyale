@@ -2,7 +2,6 @@
 <h3 align="center">Bot that farms masteries on clash royale. Fully customizable!</h3> 
 
 [Click Here to join out Discord Server!](https://discord.com/invite/AYjvBSNrrn/)
-
 (We share configs here too)
 
 ## ⚙ Setup
