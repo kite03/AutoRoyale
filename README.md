@@ -26,3 +26,13 @@ Compile as release.
 This project is fully open-source and therefore all help is both appreciated and welcome!
 
 You can contribute by making a pull request. Thanks!
+
+## Gallery
+
+![image](https://user-images.githubusercontent.com/67329371/169617395-fe113a2d-1f96-4296-852a-a205628e537c.png)
+
+![image](https://user-images.githubusercontent.com/67329371/169617475-3403c54b-9c22-4971-9678-f406140174b1.png)
+
+![image](https://user-images.githubusercontent.com/67329371/169617490-2af3b85e-cfdd-4445-8eea-39552e962490.png)
+
+![image](https://user-images.githubusercontent.com/67329371/169617506-0f2482e4-fa6b-48f1-a88d-478fe7ea02d0.png)
