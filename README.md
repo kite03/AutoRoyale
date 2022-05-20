@@ -11,13 +11,15 @@ This project is open source. All contributions are welcome and appreciated. If y
 ### How to use (Video guide coming soon)
 1.) Install [Bluestacks](https://www.bluestacks.com/) (or any other android emulator)
 
-2.) Launch clash royale on the emulator and fullscreen it so the locations of everything on the screen remains consistent.
+2.) - Install [.NET Runtime](https://dotnet.microsoft.com/en-us/download) if you haven't already.
 
-3.) Download and unzip the project from releases, or compile it yourself.
+3.) Launch clash royale on the emulator and fullscreen it so the locations of everything on the screen remains consistent.
 
-4.) Run ColorFinder.
+4.) Download and unzip the project from releases, or compile it yourself.
 
-5.) Edit cfg.txt (in the config folder) so it's set up properly.
+5.) Run ColorFinder.
+
+6.) Edit cfg.txt (in the config folder) so it's set up properly.
 
 ![image](https://user-images.githubusercontent.com/67329371/166225648-8415d7d4-072f-4093-80cd-847238d84962.png)
 
