@@ -24,6 +24,10 @@ NOTE: For windows 11 you'll have to recompile the bot.
 ![image](https://user-images.githubusercontent.com/67329371/169616881-4f57d2d1-7acb-4613-a7e2-c6e55542b08a.png)
 Compile as release.
 
+## 📖 Can I get banned for using the bot?
+
+Yeah, you can. Using this bot breaks the [terms of service.](https://supercell.com/en/terms-of-service/) I am not responsible if you get banned for using this bot.
+
 ## How can I contribute?
 This project is fully open-source and therefore all help is both appreciated and welcome!
 
