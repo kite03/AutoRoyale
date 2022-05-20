@@ -1,0 +1,21 @@
+{
+	"PartyButton": {
+	"coords":[1100,745],
+	"color":-16731905
+	},
+	"ChallengeButton": {
+	"coords":[1048,794],
+	"color":-17367
+	},
+	"OkEndButton": {
+	"coords":[999,965],
+	"color":-11883009},
+	"RewardsButton": {
+	"coords":[0,0],
+	"color":0
+	},
+	"Pos1":[1061,724],
+	"Pos2":[1174,718],
+	"CardsXs":[848,961,1078,1192],
+	"CardsY":908
+}
