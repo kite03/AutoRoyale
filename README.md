@@ -1,7 +1,7 @@
 <h1 align="center">👑 AutoRoyale 👑</h1>
 <h3 align="center">Bot that farms masteries on clash royale. Fully customizable!</h3> 
 
-[Click Here to join out Discord Server!](https://discord.com/AYjvBSNrrn/)
+[Click Here to join out Discord Server!](https://discord.com/invite/AYjvBSNrrn/)
 
 ## ⚙ Setup
 1.) First download the latest version from https://github.com/kite03/AutoRoyale/releases
