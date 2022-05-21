@@ -31,6 +31,12 @@ Compile as release.
 
 Yeah, you can. Using this bot breaks the [terms of service.](https://supercell.com/en/terms-of-service/) I am not responsible if you get banned for using this bot.
 
+(None of us have been banned yet though)
+
+## 📱 Can I use this on my phone?
+
+No.
+
 ## How can I contribute?
 This project is fully open-source and therefore all help is both appreciated and welcome!
 
