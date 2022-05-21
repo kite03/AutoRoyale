@@ -1,6 +1,6 @@
 <h1 align="center">👑 AutoRoyale 👑</h1>
 <h3 align="center">Bot that farms masteries on clash royale. Fully customizable!</h3> 
-<h3 align="center">Join out Discord Server! https://discord.com/invite/AYjvBSNrrn/ (We share configs here)</h3> 
+<h3 align="center">Join our Discord Server! https://discord.com/invite/AYjvBSNrrn/ (We share configs here)</h3> 
 
 ## ⚙ Setup
 
@@ -22,6 +22,7 @@ NOTE: For windows 11 you'll have to recompile the bot.
 
 ## ⚙ Setup (For smart people)
 ![image](https://user-images.githubusercontent.com/67329371/169616881-4f57d2d1-7acb-4613-a7e2-c6e55542b08a.png)
+
 Compile as release.
 
 ## 📖 Can I get banned for using the bot?
