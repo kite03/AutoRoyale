@@ -8,7 +8,7 @@ NOTE: For windows 11 you'll have to recompile the bot.
 
 1.) First download the latest version from https://github.com/kite03/AutoRoyale/releases also install an [android emulator](https://bluestacks.com/) and get clash royale on it.
 
-2.) 3.) Launch clash royale on the emulator and fullscreen it so the locations of everything on the screen remains consistent.
+2.) Launch clash royale on the emulator and fullscreen it so the locations of everything on the screen remains consistent.
 
 3.) Unzip, extract and run colorfinder.exe
 
