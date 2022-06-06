@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "eedc5356-1d55-4108-a4d4-9a7f5f675372": {
+      "ProjectGuid": "eedc5356-1d55-4108-a4d4-9a7f5f675372",
+      "DisplayName": "AutoRoyaleForm",
+      "ColorIndex": 0
+    },
+    "079bb3f9-8b17-4c93-8bca-6954d198a15c": {
+      "ProjectGuid": "079bb3f9-8b17-4c93-8bca-6954d198a15c",
+      "DisplayName": "AutoRoyale",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "cb10802a-f837-4e0f-8b53-8dcad76d7c2c": {
+      "ProjectGuid": "cb10802a-f837-4e0f-8b53-8dcad76d7c2c",
+      "DisplayName": "AutoRoyaleWPF",
+      "ColorIndex": 2
+    },
+    "70d8d13f-7015-4d8f-b749-d1b142fa892b": {
+      "ProjectGuid": "70d8d13f-7015-4d8f-b749-d1b142fa892b",
+      "DisplayName": "AutoRoyaleWPF",
+      "ColorIndex": 3
+    },
+    "d1117621-5330-4212-bbb8-08dea1767e05": {
+      "ProjectGuid": "d1117621-5330-4212-bbb8-08dea1767e05",
+      "DisplayName": "AutoRoyaleApp",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}
