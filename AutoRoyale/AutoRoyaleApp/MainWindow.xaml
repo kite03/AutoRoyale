@@ -1,0 +1,167 @@
+﻿<Window x:Class="AutoRoyaleApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoRoyaleApp"
+        mc:Ignorable="d"
+        Title="AutoRoyaleApp" MinHeight="450" MinWidth="750" Height="450" Width="750" Loaded="AutoRoyale1_Loaded" ResizeMode="CanResize">
+    <Grid x:Name="AutoRoyale">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Credits Button -->
+        <Button x:Name="Creds_btn" Grid.Row="0" Grid.Column="1" Content="Credits" HorizontalAlignment="Left" Style="{StaticResource GelButton}" VerticalAlignment="Center" Click="Creds_btn_Click"/>
+
+        <!-- Program title -->
+        <Label x:Name="Title" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Content="AutoRoyale" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontWeight="Bold"/>
+
+        <!-- Save to Config Button -->
+        <Button x:Name="Save_btn" Grid.Row="0" Grid.Column="2" Style="{StaticResource GelButton}" Content="Save Configuration" HorizontalAlignment="Right" VerticalAlignment="Center" Click="Save_btn_Click"/>
+        <!-- Navigation Button Settings -->
+        <GroupBox Grid.Row="1" Grid.Column="1" Header="Navigation Button Settings" Style="{StaticResource GelGroupBox}">
+            <StackPanel Orientation="Horizontal" Style="{StaticResource GelStackPanel}">
+                <Button x:Name="NavigationButtonsHelp_btn" Content="?" Style="{StaticResource GelButton}" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="20" Click="NavigationButtonsHelp_btn_Click"/>
+                <!-- Party Button Select -->
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Partybutton:" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" FontWeight="Normal"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label x:Name="PB_X_lbl" Content="X:"/>
+                        <TextBox x:Name="PB_X_txt" Margin="0,0,0,0" Text="0000" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label x:Name="PB_Y_lbl" Content="Y:"/>
+                        <TextBox x:Name="PB_Y_txt" Text="0000" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Label x:Name="PB_Color_lbl" Content="Color:" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="PB_Color_txt" Text="0000" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Button x:Name="PB_Select_btn" Content="Select" Style="{StaticResource GelButton}" HorizontalAlignment="Center" Width="75" Click="PB_Select_btn_Click"/>
+                </StackPanel>
+                <!-- Challenge Button Select -->
+                <StackPanel Orientation="Vertical">
+                    <Label Content="ChallengeButton:" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" FontWeight="Normal"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label x:Name="CB_X_lbl" Content="X:"/>
+                        <TextBox x:Name="CB_X_txt" Margin="0,0,0,0" Text="0000" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label x:Name="CB_Y_lbl" Content="Y:"/>
+                        <TextBox x:Name="CB_Y_txt" Text="0000" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Label x:Name="CB_Color_lbl" Content="Color:" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="CB_Color_txt" Text="0000" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Button x:Name="CB_Select_btn" Content="Select" Style="{StaticResource GelButton}" HorizontalAlignment="Center" Width="75" Click="CB_Select_btn_Click"/>
+                </StackPanel>
+                <!-- Ok End Button Select -->
+                <StackPanel Orientation="Vertical">
+                    <Label Content="OkEndButton:" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" FontWeight="Normal"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label x:Name="OB_X_lbl" Content="X:"/>
+                        <TextBox x:Name="OB_X_txt" Margin="0,0,0,0" Text="0000" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label x:Name="OB_Y_lbl" Content="Y:"/>
+                        <TextBox x:Name="OB_Y_txt" Text="0000" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Label x:Name="OB_Color_lbl" Content="Color:" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="OB_Color_txt" Text="0000" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Button x:Name="OB_Select_btn" Content="Select" Style="{StaticResource GelButton}" HorizontalAlignment="Center" Width="75" Click="OB_Select_btn_Click"/>
+                </StackPanel>
+                <!-- Reward Button Select-->
+                <StackPanel Orientation="Vertical">
+                    <Label Content="RewardsButton:" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" FontWeight="Normal"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label x:Name="RB_X_lbl" Content="X:"/>
+                        <TextBox x:Name="RB_X_txt" Margin="0,0,0,0" Text="0000" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label x:Name="RB_Y_lbl" Content="Y:"/>
+                        <TextBox x:Name="RB_Y_txt" Text="0000" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Label x:Name="RB_Color_lbl" Content="Color:" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="RB_Color_txt" Text="0000" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Button x:Name="RB_Select_btn" Content="Select" Style="{StaticResource GelButton}" HorizontalAlignment="Center" Width="75" Click="RB_Select_btn_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+
+        <!-- Card Placement Positions -->
+        <GroupBox Grid.Row="1" Grid.Column="2" Header="Card Placement Settings" Style="{StaticResource GelGroupBox}">
+            <StackPanel Orientation="Horizontal" Style="{StaticResource GelStackPanel}">
+                <Button x:Name="CardPlacePosHelp_btn" Content="?" HorizontalAlignment="Center" VerticalAlignment="Top" Width="20" Click="CardPlacePosHelp_btn_Click"/>
+                <StackPanel>
+                    <Label Content="Card placement positions:" HorizontalAlignment="Center"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button x:Name="AddPos_btn" Content="+" HorizontalAlignment="Center" Style="{StaticResource GelButton}" VerticalAlignment="Center" Click="AddPos_btn_Click"/>
+                        <ListBox x:Name="CardPosList" MinHeight="0" MinWidth="100" HorizontalAlignment="Center"/>
+                        <Button x:Name="DelPos_btn" Content="-" HorizontalAlignment="Center" Style="{StaticResource GelButton}" VerticalAlignment="Center" Click="DelPos_btn_Click"/>
+                    </StackPanel>
+                    <Button x:Name="ShowPosDet_btn" Content="Position info" HorizontalAlignment="Center" Style="{StaticResource GelButton}" Click="ShowPosDet_btn_Click"/>
+                    <CheckBox Content="Random placement"/>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+
+        <!-- Card Slot Positions -->
+        <GroupBox Grid.Row="2" Grid.Column="1" Header="Card Slot Settings" Style="{StaticResource GelGroupBox}">
+            <StackPanel Orientation="Vertical" Style="{StaticResource GelStackPanel}">
+                <Label Content="Card slot positions:" VerticalAlignment="Top"/>
+                <!-- Y Value-->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Label Content="Y:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBox x:Name="CS_CardsY_txt" Text="0000" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <!-- Card 1 -->
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="Card 1:" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="X:" VerticalAlignment="Center"/>
+                            <TextBox x:Name="CS_Card1_txt" VerticalAlignment="Center" Text="0000"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <!-- Card 2 -->
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="Card 2:" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="X:" VerticalAlignment="Center"/>
+                            <TextBox x:Name="CS_Card2_txt" VerticalAlignment="Center" Text="0000"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <!-- Card 3 -->
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="Card 3:" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="X:" VerticalAlignment="Center"/>
+                            <TextBox x:Name="CS_Card3_txt" VerticalAlignment="Center" Text="0000"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <!-- Card 4 -->
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="Card 4:" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="X:" VerticalAlignment="Center"/>
+                            <TextBox x:Name="CS_Card4_txt" VerticalAlignment="Center" Text="0000"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+                <Button x:Name="CS_CardsY_btn" Content="Select" VerticalAlignment="Center" Style="{StaticResource GelButton}" Click="CS_CardsY_btn_Click"/>
+            </StackPanel>
+        </GroupBox>
+
+        <!-- Start Bot Position -->
+        <Button x:Name="StartBot_bnt" Grid.Column="2" Grid.Row="2" Content="Start Bot" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource GelButton}"  FontSize="14" Click="StartBot_bnt_Click"/>
+
+
+
+    </Grid>
+</Window>
