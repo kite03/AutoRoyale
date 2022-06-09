@@ -2,7 +2,6 @@ C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\bin\Release
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\bin\Release\net6.0-windows\AutoRoyaleApp.deps.json
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\bin\Release\net6.0-windows\AutoRoyaleApp.runtimeconfig.json
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\bin\Release\net6.0-windows\AutoRoyaleApp.dll
-C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\bin\Release\net6.0-windows\ref\AutoRoyaleApp.dll
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\bin\Release\net6.0-windows\AutoRoyaleApp.pdb
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\bin\Release\net6.0-windows\Newtonsoft.Json.dll
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\AutoRoyaleApp.csproj.AssemblyReference.cache
@@ -10,6 +9,7 @@ C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\App.g.cs
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\AutoRoyaleApp_MarkupCompile.cache
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\AutoRoyaleApp_MarkupCompile.lref
+C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\App.baml
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\MainWindow.baml
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\AutoRoyaleApp.g.resources
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\AutoRoyaleApp.GeneratedMSBuildEditorConfig.editorconfig
@@ -18,6 +18,7 @@ C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\AutoRoyaleApp.csproj.CoreCompileInputs.cache
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\AutoRoyaleApp.csproj.CopyComplete
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\AutoRoyaleApp.dll
-C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\ref\AutoRoyaleApp.dll
+C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\refint\AutoRoyaleApp.dll
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\AutoRoyaleApp.pdb
 C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\AutoRoyaleApp.genruntimeconfig.cache
+C:\Users\kwint\Documents\Githbub\AutoRoyale\AutoRoyale\AutoRoyaleApp\obj\Release\net6.0-windows\ref\AutoRoyaleApp.dll

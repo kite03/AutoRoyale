@@ -207,6 +207,7 @@ namespace AutoRoyaleApp
         {
             string jsonFile = JsonSerializer.Serialize<ConfigFile>(config);
             File.WriteAllText(dir, jsonFile);
+            MessageBox.Show("Configuration has been saved!","Success");
         }
 
         // Credits for making this
@@ -234,12 +235,12 @@ namespace AutoRoyaleApp
         {
             if (addPosition)
             {
-                AddPos_btn.Content = "Add position";
+                AddPos_btn.Content = "+";
                 addPosition = false;
                 return;
             }
             addPosition = !addPosition;
-            AddPos_btn.Content = "Selecting";
+            AddPos_btn.Content = "...";
             addPostitionFunc();
         }
 
@@ -448,7 +449,7 @@ namespace AutoRoyaleApp
             });
             if (pressed)
             {
-                AddPos_btn.Content = "Add position";
+                AddPos_btn.Content = "+";
                 pressed = false;
                 Random rnd = new Random();
                 string name = Microsoft.VisualBasic.Interaction.InputBox("Please enter a name for the position", "Position Name", $"{rnd.Next(9999)}");
@@ -548,9 +549,31 @@ namespace AutoRoyaleApp
             }
         }
 
+        // Help explanations
+        private void CardSlotPosHelp_btn_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Press 'Select', then press '1', '2', '3' and '4' on the top of your keyboard on the card slot positions.", "Card slot position instructions", MessageBoxButton.OK);
+        }
+
+        private void CardPlacePosHelp_btn_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Press '+' then place your mouse on the preffered placement location and the press 'e'.", "Card slot position instructions", MessageBoxButton.OK);
+        }
+
+        private void NavigationButtonsHelp_btn_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Press 'select' then hover over the the button you pressed select for then press 'e'.", "Card slot position instructions", MessageBoxButton.OK);
+
+        }
+
         // Bot logic
         private async void StartTheBot()
         {
+            int i = 0;
+            int x = 0;
+            int y = 0;
+            bool party = false;
+            bool challenge = false;
             Random r = new Random();
             await Task.Run(() =>
             {
@@ -562,27 +585,38 @@ namespace AutoRoyaleApp
                     if (keyState != 0) // check if e key is pressed
                     {
                         BotRunning = false;
-                        continue;
+                        break;
                     }
                     // Checks if party button is on screen
-                    if (config.PartyButtonLocation.color == Win32.GetCursorColorValue(config.PartyButtonLocation))
+                    if (config.PartyButtonLocation.color == Win32.getColClass(config.PartyButtonLocation) && !inGame)
                     {
                         // Click on party button
                         Win32.SendLeftClick(config.PartyButtonLocation);
-                        System.Threading.Thread.Sleep(1000);
+                        party = true;
+                        Thread.Sleep(2000);
                         continue;
                     }
                     // Check if challenge button is visible
-                    if (config.ChallengeButtonLocation.color == Win32.GetCursorColorValue(config.ChallengeButtonLocation))
+                    if (config.ChallengeButtonLocation.color == Win32.getColClass(config.ChallengeButtonLocation) && party)
                     {
                         // Click on challenge button
                         Win32.SendLeftClick(config.ChallengeButtonLocation);
-                        System.Threading.Thread.Sleep(1000);
+                        Thread.Sleep(2000);
+                        challenge = true;
+                        party = false;
                         inGame = true;
                         continue;
                     }
+                    // Check if rewards button is visible
+                    if (config.RewardsButtonLocation.color == Win32.getColClass(config.RewardsButtonLocation) && challenge)
+                    {
+                        Win32.SendLeftClick(config.RewardsButtonLocation);
+                        challenge = false;
+                        Thread.Sleep(2000);
+                        continue;
+                    }
                     // Check if game has finished
-                    if (config.OkEndButtonLocation.color == Win32.GetCursorColorValue(config.OkEndButtonLocation))
+                    if (config.OkEndButtonLocation.color == Win32.getColClass(config.OkEndButtonLocation) && inGame)
                     {
                         // Click on Ok button
                         Win32.SendLeftClick(config.OkEndButtonLocation);
@@ -590,22 +624,34 @@ namespace AutoRoyaleApp
                         inGame = false;
                         continue;
                     }
-                    // Check if rewards button is visible
-                    if (config.RewardsButtonLocation.color == Win32.GetCursorColorValue(config.RewardsButtonLocation))
-                    {
-                        Win32.SendLeftClick(config.RewardsButtonLocation);
-                        System.Threading.Thread.Sleep(1000);
-                        continue;
-                    }
                     if (inGame)
                     {
-                        Thread.Sleep(2000);
                         int ran = r.Next(0, 4);
                         Win32.SendLeftClickXY(config.SlotCardLocations.X[ran], config.SlotCardLocations.Y);
-                        ran = r.Next(0, config.PlacePositions.Count);
-                        int x = config.PlacePositions[ran].X;
-                        int y = config.PlacePositions[ran].Y;
+                        
+                        if (config.RandomPlaceLocations.PlaceRandom)
+                        {
+                            int MinX = config.RandomPlaceLocations.TopLeft.X;
+                            int MaxY = config.RandomPlaceLocations.TopLeft.Y;
+                            int MaxX = config.RandomPlaceLocations.BottomRight.X;
+                            int MinY = config.RandomPlaceLocations.BottomRight.Y;
+
+                            x = r.Next(MinX, MaxX);
+                            y = r.Next(MinX, MaxY);
+                        } else
+                        {
+                            ran = r.Next(0, config.PlacePositions.Count);
+                            x = config.PlacePositions[ran].X;
+                            y = config.PlacePositions[ran].Y;
+                        }
                         Win32.SendLeftClickXY(x, y);
+                        Thread.Sleep(1000);
+                    }
+                    i++;
+                    if (i == 10000)
+                    {
+                        i = 0;
+                        Thread.Sleep(600000);
                     }
                 }
             });

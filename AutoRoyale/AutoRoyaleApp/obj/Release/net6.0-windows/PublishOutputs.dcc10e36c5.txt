@@ -1,0 +1,6 @@
+C:\Users\kwint\Desktop\Documents\Executeable\AutoRoyaleApp.exe
+C:\Users\kwint\Desktop\Documents\Executeable\AutoRoyaleApp.dll
+C:\Users\kwint\Desktop\Documents\Executeable\AutoRoyaleApp.deps.json
+C:\Users\kwint\Desktop\Documents\Executeable\AutoRoyaleApp.runtimeconfig.json
+C:\Users\kwint\Desktop\Documents\Executeable\AutoRoyaleApp.pdb
+C:\Users\kwint\Desktop\Documents\Executeable\Newtonsoft.Json.dll

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
@@ -21,6 +22,18 @@ namespace AutoRoyaleApp.Utils
         public List<CardPlacePosition> PlacePositions { get; set; }
         [JsonPropertyName("SlotCardLocations")]
         public SlotCardPositions SlotCardLocations { get; set; }
+        [JsonPropertyName("RandomPlaceLocations")]
+        public RandomPlaceLoc RandomPlaceLocations { get; set; }
+
+        public class RandomPlaceLoc
+        {
+            [JsonPropertyName("PlaceRandom")]
+            public bool PlaceRandom { get; set; }
+            [JsonPropertyName("TopLeft")]
+            public Point TopLeft { get; set; }
+            [JsonPropertyName("BottomRight")]
+            public Point BottomRight { get; set; }
+        }
         public class SlotCardPositions
         {
             [JsonPropertyName("X")]
