@@ -25,7 +25,7 @@ NOTE: For windows 11 you'll have to recompile the bot.
 ## ⚙ Setup (For smart people)
 ![image](https://user-images.githubusercontent.com/67329371/169616881-4f57d2d1-7acb-4613-a7e2-c6e55542b08a.png)
 
-Compile as release.
+Compile as release. (AutoRoyale App is a different version of AutoRoyale with a GUI. Created by @iVyperion)
 
 ## 📖 Can I get banned for using the bot?
 
