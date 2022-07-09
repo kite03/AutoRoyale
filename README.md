@@ -16,7 +16,7 @@ NOTE: For windows 11 you'll have to recompile the bot.
 
 5.) Now go into the "config" folder and open "config.json"
 
-6.) Replace each item with the correct pixel location and colour as given to you by the colorfinder.exe
+6.) Replace each item with the correct pixel location and colour as given to you by the colorfinder.exe CARDSY SHOULD BE SET TO THE BOTTOM OF THE CARD. IT NEEDS TO UNDERCUT THE "ok" BUTTON THAT APPEARS AT THE END OF A GAME.
 
 ![image](https://user-images.githubusercontent.com/67329371/169617086-6a8fcb46-c16e-48f7-bdb5-67df32e34f07.png)
 
