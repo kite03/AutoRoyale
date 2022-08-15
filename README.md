@@ -31,8 +31,6 @@ Compile as release. (AutoRoyale App is a different version of AutoRoyale with a 
 
 Yeah, you can. Using this bot breaks the [terms of service.](https://supercell.com/en/terms-of-service/) I am not responsible if you get banned for using this bot.
 
-(None of us have been banned yet though)
-
 ## 📱 Can I use this on my phone?
 
 No.
