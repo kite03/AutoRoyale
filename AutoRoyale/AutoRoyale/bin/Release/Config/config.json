@@ -1,10 +1,10 @@
 {
   "PartyButton": {
-    "coords": [ 1454, 878 ],
-    "color": -16731905
+    "coords": [ 1468, 496 ],
+    "color": -11751169
   },
   "ChallengeButton": {
-    "coords": [ 1508, 968 ],
+    "coords": [ 1440, 967 ],
     "color": -14256
   },
   "OkEndButton": {
@@ -12,11 +12,15 @@
     "color": -9913345
   },
   "RewardsButton": {
-    "coords": [ 0, 0 ],
-    "color": 0
+    "coords": [ 1319, 892 ],
+    "color": -11620353
   },
-  "Pos1": [ 1243, 706 ],
-  "Pos2": [ 1275, 706 ],
-  "CardsXs": [ 1147, 1286, 1366, 1420 ],
-  "CardsY": 1250
+  "MenuButton": {
+    "coords": [ 1579, 149 ],
+    "color": -13546908
+  },
+  "Pos1": [ 1464, 333 ],
+  "Pos2": [ 1050, 333 ],
+  "CardsXs": [ 1147, 1286, 1366, 1535 ],
+  "CardsY": 1320
 }

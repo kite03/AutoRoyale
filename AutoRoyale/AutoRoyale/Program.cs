@@ -70,6 +70,9 @@ Public Version | Created by ";
             Console.WriteLine($"Restart Button: {okEndPixel.x}, {okEndPixel.y} Col: {okEndPixel.color}");
             Pixel rewardsPixel = new Pixel(config.RewardsButton.coords, config.RewardsButton.color);
             Console.WriteLine($"No More Rewards Alert: {rewardsPixel.x}, {rewardsPixel.y} Col: {rewardsPixel.color}");
+            Pixel menuPixel = new Pixel(config.MenuButton.coords, config.MenuButton.color);
+            Console.WriteLine($"Menu Dropdown: {menuPixel.x}, {menuPixel.y} Col: {menuPixel.color}");
+
 
             Console.WriteLine("------- Buttons where color is not required -------");
             // Print more config info and set variables
@@ -93,7 +96,7 @@ Public Version | Created by ";
             int keyState;
             Random random = new Random();
 
-            Utils.log("Waiting for party button to be visible");
+            Utils.log("Waiting for menu dropdown to be visible");
 
             while (true)
             {
@@ -110,32 +113,45 @@ Public Version | Created by ";
 
                 if (!inGame)
                 {
-                    if (partyPixel.color == Win32.GetCursorColorValue(partyPixel.x, partyPixel.y))
+                    if (menuPixel.color == Win32.GetCursorColorValue(menuPixel.x, menuPixel.y))
                     {
-                        Utils.log("Clicking party button");
-                        Win32.SendLeftClick(partyPixel);
+                        Win32.SendLeftClick(menuPixel);
+                        Utils.log("Clicking menu dropdown");
 
-                        bool waiting = true;
-                        while (waiting)
+                        bool waiting = false;
+                        while (!waiting)
                         {
-                            if (challengePixel.color ==
-                                Win32.GetCursorColorValue(challengePixel.x, challengePixel.y))
+                            if (partyPixel.color == Win32.GetCursorColorValue(partyPixel.x, partyPixel.y))
                             {
-                                Utils.log("Clicking challenge button");
-                                Win32.SendLeftClick(challengePixel);
-                                waiting = false;
-                                inGame = true;
+                                waiting = true;
 
-                                System.Threading.Thread.Sleep(1000);
-                                if (rewardsPixel.color ==
-                                    Win32.GetCursorColorValue(rewardsPixel.x, rewardsPixel.y))
+                                Utils.log("Clicking party button");
+                                Win32.SendLeftClick(partyPixel);
+
+                                bool waiting2 = true;
+                                while (waiting2)
                                 {
-                                    Utils.log("Clicking no more rewards button");
-                                    Win32.SendLeftClick(rewardsPixel);
-                                }
+                                    if (challengePixel.color ==
+                                        Win32.GetCursorColorValue(challengePixel.x, challengePixel.y))
+                                    {
+                                        Utils.log("Clicking challenge button");
+                                        Win32.SendLeftClick(challengePixel);
+                                        waiting2 = false;
+                                        inGame = true;
 
+                                        System.Threading.Thread.Sleep(1000);
+                                        if (rewardsPixel.color ==
+                                            Win32.GetCursorColorValue(rewardsPixel.x, rewardsPixel.y))
+                                        {
+                                            Utils.log("Clicking no more rewards button");
+                                            Win32.SendLeftClick(rewardsPixel);
+                                        }
+
+                                    }
+                                }
                             }
                         }
+
                     }
                 }
                 else
@@ -157,6 +173,7 @@ Public Version | Created by ";
                         }
                         else
                         {
+                            
                             // Play Loop
                             Thread.Sleep(2000);
                             // Pick number between 0 and 4 at random
@@ -166,6 +183,7 @@ Public Version | Created by ";
                             Utils.log($"Playing Troop {rand + 1}");
                             Thread.Sleep(300);
                             Win32.SendLeftClick(switcher ? pos1 : pos2);
+                            
                             switcher = !switcher;
                         }
                     }
@@ -272,6 +290,8 @@ public class Utils
         public Button ChallengeButton { get; set; }
         public Button OkEndButton { get; set; }
         public Button RewardsButton { get; set; }
+        public Button MenuButton { get; set; }
+
         public int[] Pos1 { get; set; }
         public int[] Pos2 { get; set; }
         public int[] CardsXs { get; set; }
@@ -297,6 +317,7 @@ public class Utils
             this.ChallengeButton = new Button();
             this.OkEndButton = new Button();
             this.RewardsButton = new Button();
+            this.MenuButton = new Button();
 
             this.Pos1 = new int[] { 0, 0 };
             this.Pos2 = new int[] { 0, 0 };
