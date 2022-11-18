@@ -157,7 +157,7 @@ Public Version | Created by ";
                 else
                 {
                     // Check if we are on first screen
-                    if (partyPixel.color == Win32.GetCursorColorValue(partyPixel.x, partyPixel.y))
+                    if (menuPixel.color == Win32.GetCursorColorValue(menuPixel.x, menuPixel.y))
                     {
                         inGame = false;
                     }
