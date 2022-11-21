@@ -79,7 +79,7 @@ Public Version | Created by ";
             // Placement positions
             Pixel pos1 = new Pixel(config.Pos1);
             Pixel pos2 = new Pixel(config.Pos2);
-            Console.WriteLine($"Placement point 1: {pos1.x}, {pos1.y}");
+            Console.WriteLine($"Placement point 1: {pos1.x}, {pos1.y}"); 
             Console.WriteLine($"Placement point 2: {pos2.x}, {pos2.y}");
 
             // Cards positions
@@ -168,7 +168,7 @@ Public Version | Created by ";
                         {
                             Utils.log("Game has ended");
                             Win32.SendLeftClick(okEndPixel);
-                            Thread.Sleep(3000);
+                            Thread.Sleep(random.Next(2000, 4000));
                             inGame = false;
                         }
                         else
@@ -182,7 +182,17 @@ Public Version | Created by ";
                             Win32.SendLeftClick(cards[rand]);
                             Utils.log($"Playing Troop {rand + 1}");
                             Thread.Sleep(300);
-                            Win32.SendLeftClick(switcher ? pos1 : pos2);
+
+                            int pointx = random.Next(pos1.x, pos2.x);
+                            int pointy = random.Next(pos1.y, pos2.y);
+
+                            Console.WriteLine(pointx + " " + pointy);
+
+                            int[] Coords = {pointx, pointy};
+
+                            Pixel p = new Pixel(Coords);
+
+                            Win32.SendLeftClick(p);
                             
                             switcher = !switcher;
                         }
