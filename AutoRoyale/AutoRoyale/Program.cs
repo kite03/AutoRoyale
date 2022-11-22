@@ -1,4 +1,4 @@
-﻿using System;
+﻿        using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -186,7 +186,7 @@ Public Version | Created by ";
                             int pointx = random.Next(pos1.x, pos2.x);
                             int pointy = random.Next(pos1.y, pos2.y);
 
-                            Console.WriteLine(pointx + " " + pointy);
+                            // Console.WriteLine(pointx + " " + pointy);
 
                             int[] Coords = {pointx, pointy};
 
