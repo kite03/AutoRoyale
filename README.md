@@ -6,9 +6,9 @@
 
 NOTE: For windows 11 you'll have to recompile the bot.
 
-1.) First download the latest version from https://github.com/kite03/AutoRoyale/releases also install an [android emulator](https://bluestacks.com/) and get clash royale on it.
+1.) First download the latest version from https://github.com/kite03/AutoRoyale/releases. Install an [android emulator](https://bluestacks.com/) and get clash royale on it.
 
-2.) Launch clash royale on the emulator and fullscreen it so the locations of everything on the screen remains consistent.
+2.) Launch clash royale on the emulator and fullscreen it so the locations of everything on the screen remains consistent when you next re-run the bot.
 
 3.) Unzip, extract and run colorfinder.exe
 
@@ -16,11 +16,11 @@ NOTE: For windows 11 you'll have to recompile the bot.
 
 5.) Now go into the "config" folder and open "config.json"
 
-6.) Replace each item with the correct pixel location and colour as given to you by the colorfinder.exe CARDSY SHOULD BE SET TO THE BOTTOM OF THE CARD. IT NEEDS TO UNDERCUT THE "ok" BUTTON THAT APPEARS AT THE END OF A GAME.
+6.) Replace each item with the correct pixel location and colour as given to you by the colorfinder.exe. CARDSY SHOULD BE SET TO THE BOTTOM OF THE CARD. IT NEEDS TO UNDERCUT THE "ok" BUTTON THAT APPEARS AT THE END OF A GAME.
 
 ![image](https://user-images.githubusercontent.com/67329371/169617086-6a8fcb46-c16e-48f7-bdb5-67df32e34f07.png)
 
-Position 1 should be set at the red X and positon 2 should be set at the blue X. (Troops will be placed within the green square.)
+Pos1 should be set at the red X and Pos2 should be set at the blue X. (Troops will be placed within the green square.)
 ![image](https://user-images.githubusercontent.com/67329371/203180744-2e019406-5c51-47ad-a9df-5a2b91e83c73.png)
 
 
