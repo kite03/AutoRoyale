@@ -20,7 +20,10 @@ NOTE: For windows 11 you'll have to recompile the bot.
 
 ![image](https://user-images.githubusercontent.com/67329371/169617086-6a8fcb46-c16e-48f7-bdb5-67df32e34f07.png)
 
+
 Pos1 should be set at the red X and Pos2 should be set at the blue X. (Troops will be placed within the green square.)
+
+
 ![image](https://user-images.githubusercontent.com/67329371/203180744-2e019406-5c51-47ad-a9df-5a2b91e83c73.png)
 
 
